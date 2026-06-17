@@ -48,7 +48,8 @@ const PortfolioNoticeModal = () => {
 
         <button
           onClick={handleClose}
-          className="w-full rounded-xl bg-[#0F9B73] py-2.5 font-bold text-white hover:bg-[#0d8a66] transition">
+          className="w-full rounded-xl bg-[#0F9B73] py-2.5 font-bold text-white hover:bg-[#0d8a66] transition"
+        >
           확인
         </button>
         
