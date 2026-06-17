@@ -77,14 +77,16 @@ const LandingPage = () => {
               className={`py-[12px] px-[40px] font-bold rounded-lg cursor-pointer transition-all duration-200 border-none ${
                 activeTab === '남부' ? 'bg-[#2B4A48] text-white' : 'bg-white/70 text-[#555]'
               }`}
-              onClick={() => setActiveTab('남부')}>
+              onClick={() => setActiveTab('남부')}
+            >
               경기 남부
             </button>
             <button
               className={`py-[12px] px-[40px] font-bold rounded-lg cursor-pointer transition-all duration-200 border-none ${
                 activeTab === '북부' ? 'bg-[#2B4A48] text-white' : 'bg-white/70 text-[#555]'
               }`}
-              onClick={() => setActiveTab('북부')}>
+              onClick={() => setActiveTab('북부')}
+            >
               경기 북부
             </button>
           </div>
@@ -100,7 +102,8 @@ const LandingPage = () => {
                 onBlur={() => setHoveredCityCode(null)}
                 className={`group relative overflow-hidden rounded-lg border-none bg-white/90 px-[10px] py-[18px] font-medium text-[#333] shadow-[0_2px_8px_rgba(0,0,0,0.03)] ring-1 ring-transparent transition-all duration-200 ease-out hover:-translate-y-[2px] hover:scale-[1.04] hover:bg-white hover:text-[#0D7F60] hover:shadow-[0_12px_28px_rgba(15,23,42,0.08)] hover:ring-black/5 focus:-translate-y-[2px] focus:scale-[1.04] focus:bg-white focus:text-[#0D7F60] focus:shadow-[0_12px_28px_rgba(15,23,42,0.08)] focus:ring-black/5 active:translate-y-0 active:scale-[0.98] ${
                   hoveredCityCode && hoveredCityCode !== region.code ? 'opacity-45' : 'opacity-100'
-                }`}>
+                }`}
+              >
                 <span className="relative z-10">{region.textKor}</span>
               </button>
             ))}
